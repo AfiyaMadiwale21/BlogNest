@@ -8,8 +8,8 @@ BlogNest is a web application that allows users to create, view, and manage thei
 
 - 🔐 User Authentication (JWT)
 - 📝 Create, Read, and Delete Blogs
-- 🧠 MongoDB for storing users & posts
-- 🌈 Beautiful UI with Tailwind CSS
+- 🧠 MongoDB for storing users & blog data posts
+- 🌈 Beautiful User Interface with Tailwind CSS
 - 🧑‍🤝‍🧑 Only blog creator can delete their own posts
 
 ---
