@@ -5,7 +5,8 @@ import Signup from "./Signup";
 import About from "./About";
 import Contact from "./Contact";
 import Login from "./Login";
-import BlogDashboard from "./BlogDashboard";
+import PostBlog from "./PostBlog";
+import AllBlogs from "./AllBlogs";
 import Footer from "./Footer";
 
 function App() {
@@ -25,18 +26,20 @@ function App() {
   };
 
   return (
-    <div>
-      <nav className="bg-blue-100 dark:bg-gray-900 w-full h-[65px] flex items-center justify-center px-15">
-        <div className="flex items-center">
-          <ul className="flex gap-12 items-center">
-            <li><Link to="/" className="hover:underline font-bold text-lg">Home</Link></li>
-            <li><Link to="/about" className="hover:underline font-bold text-lg">About</Link></li>
-            <li><Link to="/contact" className="hover:underline font-bold text-lg">Contact</Link></li>
-            <li><Link to="/blogdashboard" className="hover:underline font-bold text-lg">BlogDashboard</Link></li>
+    <div className="bg-black text-white">
+      <nav>
+        <div>
+          <ul className="py-2 md:flex gap-8 md:justify-center md:items-center md:p-4 font-cardo font-extralight text-lg">
+            <li><Link to="/" className="hover:text-xl duration-300">Home</Link></li>
+            <li><Link to="/postblog" className="hover:text-xl duration-300">PostBlog</Link></li>
+            <li><Link to="/allblogs" className="hover:text-xl duration-300">AllBlogs</Link></li>
+            <li><Link to="/about" className="hover:text-xl duration-300">About</Link></li>
+            <li><Link to="/contact" className="hover:text-xl duration-300">Contact</Link></li>
+
 
             {!isLoggedIn && (
               <>
-                <li><Link to="/signup" className="px-6 py-1.5 bg-black text-white hover:border-4 border-double rounded-md">Signup</Link></li>
+                <li><Link to="/signup" className="px-5 py-1.5 text-white duration-200 hover:border-2 rounded-md">Signup</Link></li>
               </>
             )}
 
@@ -44,8 +47,7 @@ function App() {
               <li>
                 <button
                   onClick={handleLogout}
-                  className="px-6 py-1.5 bg-black text-white hover:border-4 border-double rounded-md"
-                >
+                  className="px-5 py-1.5 text-white  duration-200 hover:border-2 rounded-md">
                   Logout
                 </button>
               </li>
@@ -62,11 +64,13 @@ function App() {
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 
         <Route
-          path="/blogdashboard"
+          path="/postblog"
           element={
-            isLoggedIn ? <BlogDashboard /> : <Navigate to="/login" />
+            isLoggedIn ? <PostBlog /> : <Navigate to="/Signup" />
           }
         />
+        <Route path="/allblogs" element={<AllBlogs />
+        } />
       </Routes>
       <Footer />
     </div>

@@ -19,16 +19,16 @@ function Signup({ setIsLoggedIn }) {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex items-center justify-center bg-black">
             <div className="bg-white p-8 rounded shadow-md w-96">
-                <h2 className="text-2xl font-bold mb-6 text-center">Signup</h2>
+                <h2 className="text-2xl font-bold font-merienda mb-6 text-center text-black">Signup</h2>
                 <input
-                    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded"
+                    className="w-full mb-4 px-4 py-2 border border-gray-300 text-black rounded"
                     placeholder="Username"
                     onChange={e => setUsername(e.target.value)}
                 />
                 <input
-                    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded"
+                    className="w-full mb-4 px-4 py-2 border border-gray-300 text-black rounded"
                     placeholder="Password"
                     type="password"
                     onChange={e => setPassword(e.target.value)}
@@ -39,7 +39,7 @@ function Signup({ setIsLoggedIn }) {
                 >
                     Sign Up
                 </button>
-                <p className="text-xs">Already have an account? <Link className="text-purple-900 font-bold underline" to="/Login">Login</Link></p>
+                <p className="text-sm text-black">Already have an account? <Link className="text-purple-900 font-bold underline" to="/Login">Login</Link></p>
             </div>
         </div>
     );

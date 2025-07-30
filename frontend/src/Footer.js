@@ -3,7 +3,7 @@ const Footer = () => {
     return (
 
 
-        <div className="flex justify-between items-start px-10 py-12 text-gray-700">
+        <div className="flex justify-between items-start px-10 py-24 text-gray-300">
 
             {/* About Section */}
             <div className="flex flex-col justify-center items-center">
@@ -19,9 +19,9 @@ const Footer = () => {
             <div className="w-1/3">
                 <h1 className="text-lg font-bold mb-2 underline">Quick Links</h1>
                 <ul className="flex flex-col gap-1 text-sm">
-                    <Link to="/" className="hover:text-black">Home</Link>
-                    <Link to="/about" className="hover:text-black">About</Link>
-                    <Link to="/contact" className="hover:text-black">Contact</Link>
+                    <Link to="/" className="hover:text-white">Home</Link>
+                    <Link to="/about" className="hover:text-white">About</Link>
+                    <Link to="/contact" className="hover:text-white">Contact</Link>
                 </ul>
             </div>
 
@@ -29,10 +29,10 @@ const Footer = () => {
             <div className="w-1/3">
                 <h1 className="text-lg font-bold mb-2 underline">Category</h1>
                 <ul className="flex flex-col gap-1 text-sm">
-                    <Link className="hover:text-black">Weather</Link>
-                    <Link className="hover:text-black">Lifestyle</Link>
-                    <Link className="hover:text-black">Technology</Link>
-                    <Link className="hover:text-black">News</Link>
+                    <Link className="hover:text-white">Weather</Link>
+                    <Link className="hover:text-white">Lifestyle</Link>
+                    <Link className="hover:text-white">Technology</Link>
+                    <Link className="hover:text-white">News</Link>
                 </ul>
             </div>
         </div>

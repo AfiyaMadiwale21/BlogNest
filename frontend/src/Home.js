@@ -1,17 +1,25 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 function Home() {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/Signup");
+    }
     return (
         <div>
-            <p className="text-center text-lg text-gray-700 mt-6 mx-20">
-                Welcome to <span className="font-semibold text-pink-400">BlogNest</span>!
-                Start writing your thoughts, read amazing blogs, and share your ideas with the world.
-                It's quick, simple, and made for everyone who loves to express themselves.
-                Let your voice be heard.
-            </p>
-
-            <div className="flex justify-center items-center mt-10">
-                <img src="/bloghero.avif" alt="img" className="border-2 border-black w-170 h-110" />
+            <div className="mt-40 ml-12 flex justify-between">
+                <h1 className="text-white text-8xl font-coiny font-light">BlogNest</h1>
+                <p className="w-96 leading-relaxed mr-20 text-gray-300 text-sm">Start writing your thoughts, read amazing blogs, and share your ideas with the world.
+                    It's quick, simple, and made for everyone who loves to express themselves.
+                    BlogNest is your personal space to express, explore, and connect through words.
+                    Whether you're sharing ideas, experiences, or knowledge, blogging gives your voice
+                    a platform to reach the world. Start your journey and let your thoughts flow freely.</p>
+            </div>
+            <div className="flex justify-end">
+                <FontAwesomeIcon icon={faArrowRight} className="text-white text-sm mt-20 mr-1" />
+                <button className="text-black mr-64 mt-16 bg-white text-lg py-1.5 px-2 duration-500 hover:scale-105" onClick={handleClick}>Get Started</button>
             </div>
         </div>
     );
