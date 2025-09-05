@@ -14,7 +14,7 @@ function AllBlogs() {
 
     return (
         <div className="mt-10">
-            <ul className="space-y-8 max-w-4xl mx-auto">
+            <ul className="space-y-7 max-w-2xl md:space-y-8 md:max-w-4xl md:mx-auto mx-6">
                 {blogs.map(blog => (
                     <li
                         key={blog._id}

@@ -9,9 +9,9 @@ function Home() {
     }
     return (
         <div>
-            <div className="mt-40 ml-12 flex justify-between">
-                <h1 className="text-white text-8xl font-coiny font-light">BlogNest</h1>
-                <p className="w-96 leading-relaxed mr-20 text-gray-300 text-sm">Start writing your thoughts, read amazing blogs, and share your ideas with the world.
+            <div className="mt-40 ml-12 flex flex-col gap-3 justify-between md:flex md:flex-row ">
+                <h1 className="text-white  text-7xl md:text-8xl font-coiny font-light">BlogNest</h1>
+                <p className="md:w-96  mr-3 md:leading-relaxed md:mr-20 text-gray-300 md:text-sm">Start writing your thoughts, read amazing blogs, and share your ideas with the world.
                     It's quick, simple, and made for everyone who loves to express themselves.
                     BlogNest is your personal space to express, explore, and connect through words.
                     Whether you're sharing ideas, experiences, or knowledge, blogging gives your voice

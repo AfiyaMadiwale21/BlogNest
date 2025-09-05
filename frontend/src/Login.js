@@ -21,7 +21,7 @@ function Login({ setIsLoggedIn }) {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-black">
-            <div className="bg-white p-8 rounded shadow-md w-96">
+            <div className="bg-white p-8 rounded shadow-md w-72 md:w-96">
                 <h2 className="text-2xl font-bold text-black font-merienda mb-6 text-center">Login</h2>
                 <input
                     className="w-full mb-4 px-4 py-2 border border-gray-300  text-black rounded"
