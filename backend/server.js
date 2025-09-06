@@ -7,7 +7,10 @@ const blogRoutes = require("./routes/blog");
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://blog-nest-lake.vercel.app/',
+  credentials: true
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
