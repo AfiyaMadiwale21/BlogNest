@@ -1,20 +1,46 @@
-<<<<<<< HEAD
-# React + Vite
+# BlogNest 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BlogNest is a modern blogging web application where users can explore blogs publicly and create their own content after authentication.
+It allows users to sign up, log in, create blogs with images, and manage their personal posts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Overview
 
-## React Compiler
+BlogNest provides an **All Blogs** page where users can view all published blogs available on the platform. Each blog can be opened individually to view its detailed blog page, which displays the complete content in a readable format.
+The platform includes secure authentication features such as Sign Up and Login. Once authenticated, users gain access to personalized features for managing their own blogs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# BlogNest
->>>>>>> 2b4631d4d7359f5fa4bb94ea97b94efdfae17821
+- User authentication
+- Create blogs using a dedicated Create Blog page
+- View all blogs on the All Blogs page
+- Detailed blog page for individual blogs
+- Personalized My Blogs page for logged-in users
+- Edit blogs and Delete blogs created by the user
+
+---
+
+## 🛠️ Tech Stack
+
+- React, Vite, Tailwind CSS    
+- Authentication: Supabase Auth  
+- Version Control: Git & GitHub  
+
+---
+
+## 📷 Screenshots
+
+(<img width="968" height="699" alt="image" src="https://github.com/user-attachments/assets/cecfd4c4-2c4d-4a48-8ae8-30f83d595dbc" />
+<img width="656" height="584" alt="image" src="https://github.com/user-attachments/assets/8ac4a28d-85fb-49de-91f4-599c9d52ae57" />
+<img width="647" height="590" alt="image" src="https://github.com/user-attachments/assets/71cb19bf-fe2d-4e3b-9d0c-7e33cc7fb9bb" />
+
+)
+
+---
+
+## 📬 Author
+
+Developed by **Afiya**
