@@ -34,7 +34,7 @@ The platform includes secure authentication features such as Sign Up and Login. 
 ## 📷 Screenshots
 
 <img width="968" height="699" alt="image" src="https://github.com/user-attachments/assets/cecfd4c4-2c4d-4a48-8ae8-30f83d595dbc" />
-<img width="656" height="584" alt="image" src="https://github.com/user-attachments/assets/8ac4a28d-85fb-49de-91f4-599c9d52ae57" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8ac4a28d-85fb-49de-91f4-599c9d52ae57" />
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/71cb19bf-fe2d-4e3b-9d0c-7e33cc7fb9bb" />
 
 
