@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.marck {
+    font-family: "Marck Script", cursive;
+}
+
+.cormorant {
+    font-family: "Cormorant", serif;
+}
+
+.luxurious {
+    font-family: "Luxurious Roman", serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
